@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Prototype booking step for RIFT Hotel."><title>Check Availability — RIFT Hotel</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header header-solid"><a class="wordmark" href="index.html" aria-label="RIFT Hotel home"><span>R</span><span class="rift-i" aria-hidden="true"></span><span>FT</span></a><nav class="desktop-nav" aria-label="Main navigation"><a href="stay.html">Stay</a><a href="experiences.html">Experiences</a><a href="location.html">Location</a></nav><a class="btn btn-light header-cta" href="book.html" aria-current="page">Check availability</a><button class="menu-toggle" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button></header>
+<nav class="mobile-nav" aria-label="Mobile navigation"><a href="stay.html">Stay</a><a href="experiences.html">Experiences</a><a href="location.html">Location</a><a href="book.html">Check availability</a></nav>
+<main id="main" class="booking-wrap">
+  <div class="booking-shell">
+    <aside class="booking-aside"><div class="eyebrow">Booking destination</div><h1>Choose your time between worlds.</h1><p>This screen demonstrates the intended primary conversion journey. It does not connect to a real booking or payment system.</p><p><strong>RIFT Hotel</strong><br>64.9631° N · 19.0208° W<br>Icelandic Highlands</p></aside>
+    <section class="booking-form" aria-labelledby="availability-title">
+      <div class="eyebrow">Step 1 of 2</div><h2 id="availability-title">Check availability</h2><p class="form-note">Prototype only — no reservation or payment will be created.</p>
+      <form id="availability-form">
+        <div class="form-grid">
+          <div class="field"><label for="arrival">Arrival</label><input id="arrival" name="arrival" type="date" required></div>
+          <div class="field"><label for="departure">Departure</label><input id="departure" name="departure" type="date" required></div>
+          <div class="field"><label for="guests">Guests</label><select id="guests" name="guests"><option>1 guest</option><option selected>2 guests</option></select></div>
+          <div class="field"><label for="room">Room preference</label><select id="room" name="room"><option>Any room</option><option>Stone Room</option><option>Lava View</option><option>RIFT Suite</option></select></div>
+          <div class="field full"><label for="notes">What matters most?</label><select id="notes" name="notes"><option>Mountain view</option><option>Private geothermal soak</option><option>Quietest room</option><option>Close to dining</option></select></div>
+        </div>
+        <button class="btn btn-dark" type="submit">View available stays</button>
+      </form>
+      <div class="availability-results" id="availability-results" aria-live="polite">
+        <div class="eyebrow">Available for <span data-nights>2 nights</span></div>
+        <div class="result-card"><div><strong>Stone Room</strong><small>Breakfast included · Mountain view</small></div><div class="result-price">from €420<small>/ night</small></div></div>
+        <div class="result-card"><div><strong>Lava View</strong><small>Breakfast included · Panoramic glass</small></div><div class="result-price">from €560<small>/ night</small></div></div>
+        <div class="result-card"><div><strong>RIFT Suite</strong><small>Breakfast included · Private geothermal soak</small></div><div class="result-price">from €790<small>/ night</small></div></div>
+        <p class="form-note">End of prototype journey. In a real hotel site, selecting a room would continue to guest details and payment.</p>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><a class="wordmark" href="index.html"><span>R</span><span class="rift-i" aria-hidden="true"></span><span>FT</span></a><p>A fictional design-led retreat created as a digital marketing prototype.</p></div><div class="footer-col"><h4>Explore</h4><a href="stay.html">Stay</a><a href="experiences.html">Experiences</a><a href="location.html">Location</a></div><div class="footer-col"><h4>Plan</h4><a href="book.html">Check availability</a><a href="location.html#practical">Practical details</a></div></div><div class="footer-bottom"><span>RIFT Hotel · Iceland</span><span>Prototype site — no real reservations are created.</span></div></footer>
+<script src="script.js"></script>
+</body></html>
