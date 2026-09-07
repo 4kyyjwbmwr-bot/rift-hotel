@@ -1,0 +1,12 @@
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.logo-image-link img,.hero-logo img{display:none!important}
+.wordmark.logo-image-link{display:inline-flex!important;flex-direction:column;align-items:flex-start;justify-content:center;gap:.28rem;line-height:1;text-decoration:none;overflow:visible;color:#fff;min-width:112px}
+.wordmark.logo-image-link::before{content:"RIFT";display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;font-weight:500;line-height:.76;letter-spacing:.22em;color:#fff;white-space:nowrap}
+.wordmark.logo-image-link::after{content:"HOTEL";display:block;font-family:'Inter',Arial,sans-serif;font-size:.5rem;font-weight:500;line-height:1;letter-spacing:.54em;margin-left:.2rem;color:#fff;white-space:nowrap}
+.site-footer .wordmark.logo-image-link{min-width:150px;gap:.4rem}
+.site-footer .wordmark.logo-image-link::before{font-size:2.4rem;letter-spacing:.2em}
+.site-footer .wordmark.logo-image-link::after{font-size:.56rem;letter-spacing:.58em;margin-left:.28rem}
+.hero-logo{display:inline-flex!important;flex-direction:column;align-items:flex-start;gap:.72rem;margin:0 0 1.7rem!important;color:#fff;overflow:visible;line-height:1}
+.hero-logo::before{content:"RIFT";display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(5rem,8.5vw,8.2rem);font-weight:500;line-height:.72;letter-spacing:.14em;color:#fff;white-space:nowrap}
+.hero-logo::after{content:"HOTEL";display:block;font-family:'Inter',Arial,sans-serif;font-size:clamp(.78rem,1vw,.98rem);font-weight:500;line-height:1;letter-spacing:.68em;margin-left:.5rem;color:#fff;white-space:nowrap}
+@media(max-width:760px){.wordmark.logo-image-link{min-width:94px;gap:.24rem}.wordmark.logo-image-link::before{font-size:1.55rem;letter-spacing:.2em}.wordmark.logo-image-link::after{font-size:.43rem;letter-spacing:.48em}.site-footer .wordmark.logo-image-link::before{font-size:2rem}.site-footer .wordmark.logo-image-link::after{font-size:.5rem}.hero-logo::before{font-size:clamp(4rem,18vw,6rem);letter-spacing:.11em}.hero-logo::after{font-size:.72rem;letter-spacing:.55em;margin-left:.36rem}}
