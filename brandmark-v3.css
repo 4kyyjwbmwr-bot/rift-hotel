@@ -1,0 +1,37 @@
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* RIFT custom wordmark: R + drawn split I + FT */
+.rift-wordmark{display:inline-flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:#fff;line-height:1;gap:.32rem}
+.rift-wordmark-main{display:inline-flex;align-items:center;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:.72;letter-spacing:.16em;white-space:nowrap}
+.rift-wordmark-main .letters{display:inline-block}
+.rift-cut-i{position:relative;display:inline-block;width:.34em;height:.92em;margin:0 .09em 0 -.015em;flex:0 0 auto}
+.rift-cut-i::before,.rift-cut-i::after{content:'';position:absolute;left:50%;width:48%;height:49%;background:currentColor;transform:translateX(-50%)}
+.rift-cut-i::before{top:0;clip-path:polygon(28% 0,78% 0,58% 100%,38% 100%);transform:translateX(-50%) rotate(-4deg);transform-origin:50% 100%}
+.rift-cut-i::after{bottom:0;clip-path:polygon(38% 0,58% 0,78% 100%,28% 100%);transform:translateX(-50%) rotate(4deg);transform-origin:50% 0}
+.rift-hotel-label{font-family:'Inter',Arial,sans-serif;font-weight:500;line-height:1;letter-spacing:.56em;white-space:nowrap}
+
+/* Header */
+.site-header .rift-wordmark-main{font-size:1.9rem}
+.site-header .rift-hotel-label{font-size:.5rem;margin-left:.18rem}
+
+/* Hero */
+.hero-rift-wordmark{display:inline-flex;flex-direction:column;align-items:flex-start;color:#fff;gap:.68rem;margin:0 0 1.75rem}
+.hero-rift-wordmark .rift-wordmark-main{font-size:clamp(5rem,8.5vw,8.2rem);letter-spacing:.105em}
+.hero-rift-wordmark .rift-cut-i{width:.31em;height:.91em;margin-left:.04em;margin-right:.07em}
+.hero-rift-wordmark .rift-hotel-label{font-size:clamp(.8rem,1vw,1rem);letter-spacing:.68em;margin-left:.5rem}
+
+/* Footer */
+.site-footer .rift-wordmark-main{font-size:2.4rem;letter-spacing:.14em}
+.site-footer .rift-hotel-label{font-size:.56rem;letter-spacing:.58em;margin-left:.24rem}
+
+/* Hero supporting copy readability */
+.hero-aside{max-width:32rem!important;padding:1.5rem 1.75rem!important;margin-bottom:.5rem!important;background:rgba(12,12,12,.28)!important;border:1px solid rgba(255,255,255,.14)!important;border-left:1px solid rgba(255,255,255,.22)!important;border-radius:18px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.22)}
+.hero-aside .eyebrow{margin-bottom:1rem;color:rgba(255,255,255,.96);text-shadow:0 2px 10px rgba(0,0,0,.35)}
+.hero-aside .coordinates{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem!important;letter-spacing:.11em!important;line-height:1.35;color:#fff;margin-bottom:.9rem;text-shadow:0 2px 10px rgba(0,0,0,.35)}
+.hero-aside p{max-width:27rem!important;color:rgba(255,255,255,.92)!important;line-height:1.65;margin:0;text-shadow:0 2px 10px rgba(0,0,0,.35)}
+
+@media(max-width:760px){
+ .site-header .rift-wordmark-main{font-size:1.55rem}.site-header .rift-hotel-label{font-size:.43rem;letter-spacing:.48em}
+ .hero-rift-wordmark .rift-wordmark-main{font-size:clamp(4rem,18vw,6rem);letter-spacing:.09em}.hero-rift-wordmark .rift-hotel-label{font-size:.72rem;letter-spacing:.55em;margin-left:.36rem}
+ .site-footer .rift-wordmark-main{font-size:2rem}.site-footer .rift-hotel-label{font-size:.5rem}
+}
