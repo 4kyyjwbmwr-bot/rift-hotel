@@ -148,7 +148,7 @@ main section { padding: clamp(4.5rem,8vw,8rem) clamp(1.2rem,6vw,7rem); }
 .booking-wrap { padding-top: 10rem; min-height: 100vh; background: var(--ash); }
 .booking-shell { width: min(1180px,calc(100% - 2.4rem)); margin: 0 auto; display: grid; grid-template-columns: .85fr 1.15fr; background: var(--white); box-shadow: var(--shadow); }
 .booking-aside { background: linear-gradient(rgba(15,15,15,.38), rgba(15,15,15,.38)),
-    url('assets/split.png') center/cover no-repeat;
+    url('assets/Split.png') center/cover no-repeat;
   color: var(--white);
   padding: clamp(2rem,4vw,4.5rem);
 }
