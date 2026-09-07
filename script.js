@@ -6,6 +6,21 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  const addAtmosphereLink = (nav) => {
+    if (!nav || nav.querySelector('a[href="atmosphere.html"]')) return;
+    const link = document.createElement('a');
+    link.href = 'atmosphere.html';
+    link.textContent = 'Atmosphere';
+    if (window.location.pathname.endsWith('/atmosphere.html') || window.location.pathname.endsWith('atmosphere.html')) {
+      link.setAttribute('aria-current', 'page');
+    }
+    const experiencesLink = nav.querySelector('a[href="experiences.html"]');
+    if (experiencesLink) experiencesLink.insertAdjacentElement('afterend', link);
+    else nav.appendChild(link);
+  };
+
+  document.querySelectorAll('.desktop-nav, .mobile-nav').forEach(addAtmosphereLink);
+
   const toggle = document.querySelector('.menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav');
   if (toggle && mobileNav) {
