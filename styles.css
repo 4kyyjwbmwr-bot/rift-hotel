@@ -168,6 +168,36 @@ main section { padding: clamp(4.5rem,8vw,8rem) clamp(1.2rem,6vw,7rem); }
 .result-price { text-align: right; font-family: var(--serif); font-size: 1.5rem; }
 .mobile-nav { display: none; }
 
+/* Atmosphere page */
+.atmosphere-hero { min-height: 82svh; --page-bg: url('https://images.unsplash.com/photo-1767987501833-8c52105854f5?auto=format&fit=crop&w=2400&q=86'); background-position: center 56%; }
+.atmosphere-hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.34)); pointer-events: none; }
+.atmosphere-hero { position: relative; }
+.atmosphere-hero .content { position: relative; z-index: 1; }
+.atmosphere-hero h1 { max-width: 1050px; }
+.atmosphere-section { overflow: hidden; }
+.atmosphere-landscape { background: var(--ash); }
+.atmosphere-retreat { background: var(--obsidian); color: var(--white); }
+.atmosphere-retreat .section-head p { color: rgba(255,255,255,.72); }
+.atmosphere-experience { background: var(--stone); }
+.atmosphere-gallery { display: grid; grid-template-columns: repeat(12,minmax(0,1fr)); gap: clamp(.75rem,1.5vw,1.4rem); align-items: start; }
+.atmosphere-frame { margin: 0; position: relative; overflow: hidden; background: var(--lava); }
+.atmosphere-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .4s ease; filter: saturate(.82) contrast(1.03); }
+.atmosphere-frame:hover img { transform: scale(1.018); }
+.atmosphere-frame figcaption { position: absolute; left: 1rem; bottom: 1rem; color: var(--white); text-transform: uppercase; letter-spacing: .18em; font-size: .64rem; font-weight: 500; text-shadow: 0 2px 12px rgba(0,0,0,.6); }
+.atmosphere-frame::after { content: ''; position: absolute; inset: auto 0 0; height: 36%; background: linear-gradient(transparent,rgba(0,0,0,.42)); pointer-events: none; }
+.atmo-feature { grid-column: span 8; aspect-ratio: 16/9; }
+.atmo-portrait { grid-column: span 4; aspect-ratio: 4/5; margin-top: clamp(2rem,5vw,5rem); }
+.atmo-offset { grid-column: 3 / span 8; aspect-ratio: 3/2; margin-top: clamp(.8rem,2vw,1.8rem); }
+.retreat-gallery .atmo-portrait { grid-column: 1 / span 4; margin-top: 0; }
+.retreat-gallery .atmo-feature { grid-column: 5 / span 8; margin-top: clamp(3rem,6vw,6rem); }
+.retreat-gallery .atmo-offset { grid-column: 2 / span 7; margin-top: clamp(1rem,3vw,2.5rem); }
+.experience-gallery .atmo-feature { grid-column: 1 / span 8; }
+.experience-gallery .atmo-portrait { grid-column: 9 / span 4; margin-top: clamp(3rem,7vw,7rem); }
+.experience-gallery .atmo-offset { grid-column: 4 / span 7; }
+.atmosphere-conversion { min-height: 600px; background-image: linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.62)), url('https://images.unsplash.com/photo-1761927456047-a6e188d47286?auto=format&fit=crop&w=2200&q=84'); background-position: center 58%; }
+.homepage-atmosphere-link { color: rgba(255,255,255,.78); margin-top: .85rem; align-self: flex-start; }
+.homepage-atmosphere-link:hover { color: var(--white); }
+
 @media (max-width:980px) {
   .site-header { grid-template-columns: 1fr auto; }
   .desktop-nav, .header-cta { display: none; }
@@ -187,6 +217,11 @@ main section { padding: clamp(4.5rem,8vw,8rem) clamp(1.2rem,6vw,7rem); }
   .practical-grid { grid-template-columns: 1fr 1fr; }
   .experience-row { grid-template-columns: 50px 1fr; }
   .experience-row p { grid-column: 2; }
+  .atmo-feature { grid-column: 1 / span 8; }
+  .atmo-portrait { grid-column: 9 / span 4; }
+  .atmo-offset, .retreat-gallery .atmo-offset, .experience-gallery .atmo-offset { grid-column: 2 / span 9; }
+  .retreat-gallery .atmo-portrait { grid-column: 1 / span 4; }
+  .retreat-gallery .atmo-feature { grid-column: 5 / span 8; }
 }
 @media (max-width:620px) {
   .hero { min-height: 92svh; }
@@ -203,6 +238,12 @@ main section { padding: clamp(4.5rem,8vw,8rem) clamp(1.2rem,6vw,7rem); }
   .route .line { display: none; }
   .booking-wrap { padding-top: 7rem; }
   .field.full { grid-column: auto; }
+  .atmosphere-hero { min-height: 76svh; }
+  .atmosphere-gallery { grid-template-columns: 1fr; gap: 1rem; }
+  .atmosphere-gallery .atmosphere-frame, .retreat-gallery .atmosphere-frame, .experience-gallery .atmosphere-frame { grid-column: 1; margin-top: 0; }
+  .atmosphere-gallery .atmo-feature, .atmosphere-gallery .atmo-offset { aspect-ratio: 4/3; }
+  .atmosphere-gallery .atmo-portrait { aspect-ratio: 4/5; }
+  .homepage-atmosphere-link { margin-top: .45rem; }
 }
 @media (max-width:720px) {
   .wordmark-text { font-size: 1.3rem; }
