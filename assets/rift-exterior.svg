@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Stylised RIFT Hotel in an Icelandic volcanic landscape at dusk">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7c858c"/><stop offset=".48" stop-color="#b7b4ac"/><stop offset=".7" stop-color="#d9cbb5"/><stop offset="1" stop-color="#6b6862"/></linearGradient>
+ <linearGradient id="mount" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111314"/><stop offset=".55" stop-color="#353734"/><stop offset="1" stop-color="#161718"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#342a22"/><stop offset="1" stop-color="#0e1011"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffc978" stop-opacity=".95"/><stop offset="1" stop-color="#d07a32" stop-opacity="0"/></radialGradient>
+ <filter id="noise"><feTurbulence baseFrequency=".8" numOctaves="4" seed="8" type="fractalNoise"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .18"/></feComponentTransfer></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<ellipse cx="850" cy="300" rx="420" ry="210" fill="#f0d5b0" opacity=".22"/>
+<path d="M0 420 180 165 330 300 470 110 640 340 760 245 900 420Z" fill="url(#mount)"/>
+<path d="M530 420 700 270 790 335 925 205 1060 420Z" fill="#3c403f"/>
+<path d="M690 305 700 270 790 335 925 205 980 290 945 270 923 236 850 320 790 352Z" fill="#d8ddd9" opacity=".58"/>
+<path d="M0 390C260 360 410 410 620 420S1110 365 1600 420V900H0Z" fill="#171717"/>
+<g opacity=".95">
+ <path d="M0 500c150-80 270 10 430-55s230 55 420-15 320 50 750-10v480H0Z" fill="#22231f"/>
+ <path d="M0 610c130-45 230 25 360-15s220 40 370-5 230 30 390 0 290 25 480-5v315H0Z" fill="#111211"/>
+</g>
+<g filter="url(#noise)" opacity=".75"><rect y="420" width="1600" height="480" fill="#9a9a8e"/></g>
+<!-- hotel -->
+<g transform="translate(770 395)">
+ <rect x="0" y="72" width="770" height="225" rx="2" fill="#111314"/>
+ <rect x="90" y="0" width="235" height="297" fill="#17191a"/>
+ <rect x="300" y="42" width="470" height="255" fill="#121415"/>
+ <rect x="108" y="27" width="195" height="210" fill="url(#glass)" stroke="#2f3231" stroke-width="8"/>
+ <rect x="328" y="69" width="408" height="168" fill="url(#glass)" stroke="#2f3231" stroke-width="8"/>
+ <g fill="#e9a85d"><rect x="129" y="58" width="43" height="148" opacity=".9"/><rect x="185" y="58" width="43" height="148" opacity=".5"/><rect x="241" y="58" width="43" height="148" opacity=".8"/>
+ <rect x="352" y="96" width="62" height="108" opacity=".85"/><rect x="430" y="96" width="62" height="108" opacity=".55"/><rect x="508" y="96" width="62" height="108" opacity=".9"/><rect x="586" y="96" width="62" height="108" opacity=".65"/><rect x="664" y="96" width="48" height="108" opacity=".9"/></g>
+ <g fill="#0c0d0d" opacity=".8"><rect x="170" y="155" width="94" height="22"/><rect x="390" y="165" width="104" height="18"/><rect x="540" y="160" width="110" height="20"/></g>
+ <ellipse cx="520" cy="170" rx="300" ry="160" fill="url(#glow)" opacity=".16"/>
+</g>
+<!-- path/reflection -->
+<path d="M1010 685 1290 670 1430 900H850Z" fill="#0c1112" opacity=".85"/>
+<path d="M1040 700 1270 690 1385 900H920Z" fill="#64705a" opacity=".22"/>
+<g stroke="#d7d0c5" stroke-opacity=".35" stroke-width="5"><path d="M850 860 1015 828"/><path d="M892 813 1040 784"/><path d="M932 770 1060 745"/><path d="M965 735 1082 715"/></g>
+</svg>
