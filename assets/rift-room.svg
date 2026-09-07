@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Stylised RIFT guest room looking onto the Icelandic landscape">
+<defs>
+ <linearGradient id="out" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7b858d"/><stop offset=".52" stop-color="#c1b9ac"/><stop offset="1" stop-color="#59605b"/></linearGradient>
+ <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#292725"/><stop offset="1" stop-color="#111212"/></linearGradient>
+ <linearGradient id="bed" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9d0c4"/><stop offset="1" stop-color="#9b9187"/></linearGradient>
+ <radialGradient id="lamp"><stop stop-color="#ffc978"/><stop offset="1" stop-color="#b76c32" stop-opacity="0"/></radialGradient>
+ <filter id="grain"><feTurbulence baseFrequency=".9" numOctaves="3" seed="3"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .12"/></feComponentTransfer></filter>
+</defs>
+<rect width="1600" height="900" fill="#171717"/>
+<!-- panoramic window -->
+<rect x="300" y="55" width="970" height="585" fill="url(#out)"/>
+<path d="M300 430 450 215 590 360 720 185 900 395 1025 260 1270 430V640H300Z" fill="#262a29"/>
+<path d="M480 287 590 360 720 185 825 305 720 245 650 335 590 388Z" fill="#d7d0c5" opacity=".55"/>
+<path d="M300 500c160-70 290 30 430-25s260 45 540-20v185H300Z" fill="#1a1b19"/>
+<g opacity=".5" filter="url(#grain)"><rect x="300" y="430" width="970" height="210" fill="#a6a699"/></g>
+<!-- window mullions -->
+<g fill="#111"><rect x="292" y="50" width="18" height="602"/><rect x="618" y="50" width="16" height="602"/><rect x="944" y="50" width="16" height="602"/><rect x="1264" y="50" width="18" height="602"/></g>
+<!-- architecture -->
+<path d="M0 0h330v900H0Z" fill="url(#wall)"/>
+<path d="M1270 0h330v900h-330Z" fill="#211f1d"/>
+<rect y="640" width="1600" height="260" fill="#3a3632"/>
+<path d="M0 640h1600v260H0Z" fill="#5c5751" opacity=".34" filter="url(#grain)"/>
+<!-- fireplace -->
+<rect x="42" y="340" width="178" height="270" fill="#0f1010" stroke="#4d4842" stroke-width="10"/>
+<path d="M76 570c22-100 58-112 69-28 26-56 55-22 42 28Z" fill="#d87c36"/><ellipse cx="138" cy="540" rx="120" ry="140" fill="url(#lamp)" opacity=".25"/>
+<!-- chair -->
+<path d="M220 570q0-90 96-90h70q70 0 76 80l18 150H220Z" fill="#797064"/>
+<rect x="220" y="685" width="255" height="35" rx="15" fill="#4a4540"/>
+<!-- bed -->
+<rect x="955" y="510" width="520" height="230" rx="8" fill="#493f38"/>
+<path d="M920 520q40-55 130-55h360q80 0 110 55v145H920Z" fill="url(#bed)"/>
+<path d="M948 520q40-55 110-55h112v92H955Z" fill="#eeeae4"/>
+<path d="M1165 465h150q75 0 120 55h-270Z" fill="#d7d0c5"/>
+<path d="M1140 590h355v70h-355Z" fill="#312d2a" opacity=".92"/>
+<rect x="1050" y="728" width="330" height="80" rx="7" fill="#635b53"/>
+<!-- nightstand and pendant -->
+<rect x="1390" y="535" width="100" height="25" fill="#544b43"/>
+<rect x="1435" y="0" width="4" height="380" fill="#8c8176"/><rect x="1418" y="360" width="38" height="90" rx="8" fill="#211c18"/><ellipse cx="1437" cy="430" rx="80" ry="100" fill="url(#lamp)" opacity=".28"/>
+<!-- subtle interior texture -->
+<g opacity=".28" filter="url(#grain)"><rect width="1600" height="900" fill="#fff"/></g>
+</svg>
